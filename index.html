@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Advanced Table</title>
+<link rel="icon" type="image/png" href="c:\Users\hp\Pictures\—Pngtree—faceless male profile icon_7902585.png">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;   /* Responsive scroll */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+/* Caption */
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Header */
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Borders */
+th, td {
+    border: 1px solid #ddd;
+}
+
+/* Zebra Striping */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Footer */
+tfoot {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* Responsive Text */
+@media (max-width: 600px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="table-container">
+<table>
+
+    <caption>Employee Details</caption>
+
+    <!-- Header -->
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Salary</th>
+        </tr>
+    </thead>
+
+    <!-- Body -->
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Imran</td>
+            <td>Developer</td>
+            <td>₹50,000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Amit</td>
+            <td>Tester</td>
+            <td>₹40,000</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sara</td>
+            <td>Designer</td>
+            <td>₹45,000</td>
+        </tr>
+    </tbody>
+
+    <!-- Footer -->
+    <tfoot>
+        <tr>
+            <td colspan="4">Total Employees: 3</td>
+        </tr>
+    </tfoot>
+
+</table>
+</div>
+
+</body>
+</html>
